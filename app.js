@@ -1,5 +1,7 @@
 //jshint esversion: 6
 
+
+//declaring const
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -7,6 +9,7 @@ const bodyParser = require("body-parser");
 const app = express()
 var items = ["hello","world","food"];
 
+//settting up
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
